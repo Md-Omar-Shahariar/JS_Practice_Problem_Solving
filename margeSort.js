@@ -8,6 +8,7 @@ function marge(left, right) {
       margeArray.push(right.shift());
     }
   }
+
   return [...margeArray, ...left, ...right];
 }
 
@@ -23,4 +24,4 @@ function margeSort(array) {
   const right = array;
   return marge(margeSort(left), margeSort(right));
 }
-console.log(margeSort([4, 2, 5, 41, 1]));
+console.log(margeSort([8, 1, 4, 5]));
